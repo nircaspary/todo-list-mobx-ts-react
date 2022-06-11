@@ -1,0 +1,38 @@
+.todo-item {
+  width: 100%;
+  & > li {
+    color: white;
+    background-color: var(--item-bgc-color);
+    margin-top: 10px;
+    padding: 10px;
+    border: 2px solid var(--pink-color);
+    border-radius: 10px;
+    flex-direction: row;
+    width: 70%;
+    justify-content: space-between;
+    @media screen and (max-width: 1000px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 600px) {
+      width: 95%;
+    }
+  }
+}
+.todo-icons {
+  font-size: 22px;
+  width: 80px;
+  display: flex;
+  justify-content: space-around;
+  & > * {
+    cursor: pointer;
+    &:hover {
+      transition: all ease-in-out 0.3s;
+      transform: scale(1.2);
+      color: var(--pink-color);
+    }
+  }
+  & > input[type='checkbox'] {
+    height: 22px;
+    width: 22px;
+  }
+}

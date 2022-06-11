@@ -1,0 +1,31 @@
+.add-todo-container {
+  flex-direction: row;
+  justify-content: space-between;
+
+  & > * {
+    height: 100%;
+
+    height: 35px;
+    border: none;
+    color: white;
+  }
+  & > input {
+    width: 70%;
+    background-color: var(--item-bgc-light);
+    border-radius: 10px 0 0 10px;
+    color: white;
+
+    text-align: center;
+  }
+  & > button {
+    width: 30%;
+    background-color: var(--pink-color);
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    &:hover {
+      font-size: 15px;
+      font-weight: bold;
+      transition: all ease-in-out 0.4s;
+    }
+  }
+}

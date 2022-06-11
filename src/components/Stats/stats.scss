@@ -1,0 +1,13 @@
+.stats-container {
+  background-color: var(--item-bgc-light);
+  height: 150px;
+  border-radius: 10px;
+  flex-direction: row;
+  color: white;
+  & > div {
+    width: 100%;
+  }
+  .stats-precentage {
+    font-size: 48px;
+  }
+}
